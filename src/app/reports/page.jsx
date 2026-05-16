@@ -52,6 +52,14 @@ export default function ReportsPage() {
 
   const totalValue = transactions.reduce((acc, t) => acc + (t.amount || 0), 0);
 
+  if (loading) {
+    return (
+      <div className="p-10 flex items-center justify-center min-h-screen bg-slate-50">
+        <p className="text-sm font-black uppercase tracking-[0.3em] text-slate-400 animate-pulse">Analyzing Intelligence...</p>
+      </div>
+    );
+  }
+
   return (
     <DashboardLayout>
       <div className="space-y-10">

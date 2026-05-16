@@ -20,6 +20,7 @@ export default function LoansPage() {
   const [clients, setClients] = useState([]);
   const [branches, setBranches] = useState([]);
   const [showAddLoan, setShowAddLoan] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [formData, setFormData] = useState({
     clientId: "",
     branchId: "",
@@ -55,6 +56,8 @@ export default function LoansPage() {
     } catch (error) {
       console.error("Error fetching data:", error);
       setLoans(mockLoans);
+    } finally {
+      setLoading(false);
     }
   }
 
@@ -79,6 +82,14 @@ export default function LoansPage() {
     } catch (error) {
       console.error("Error creating loan:", error);
     }
+  }
+
+  if (loading) {
+    return (
+      <div className="p-10 flex items-center justify-center min-h-screen bg-slate-50">
+        <p className="text-sm font-black uppercase tracking-[0.3em] text-slate-400 animate-pulse">Calculating Portfolio...</p>
+      </div>
+    );
   }
 
   return (

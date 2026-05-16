@@ -45,6 +45,14 @@ export default function AuditLogsPage() {
     fetchLogs();
   }, []);
 
+  if (loading) {
+    return (
+      <div className="p-10 flex items-center justify-center min-h-screen bg-slate-50">
+        <p className="text-sm font-black uppercase tracking-[0.3em] text-slate-400 animate-pulse">Decrypting Audit Trail...</p>
+      </div>
+    );
+  }
+
   return (
     <DashboardLayout>
       <div className="space-y-10">

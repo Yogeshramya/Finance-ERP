@@ -20,6 +20,7 @@ import { motion } from "framer-motion";
 export default function BranchesPage() {
   const [branches, setBranches] = useState([]);
   const [showForm, setShowForm] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [formData, setFormData] = useState({
     name: "",
     code: "",
@@ -42,6 +43,8 @@ export default function BranchesPage() {
     } catch (error) {
       console.error("Error fetching branches:", error);
       setBranches(mockBranches);
+    } finally {
+      setLoading(false);
     }
   }
 
@@ -66,6 +69,14 @@ export default function BranchesPage() {
     } catch (error) {
       console.error("Error adding branch:", error);
     }
+  }
+
+  if (loading) {
+    return (
+      <div className="p-10 flex items-center justify-center min-h-screen bg-slate-50">
+        <p className="text-sm font-black uppercase tracking-[0.3em] text-slate-400 animate-pulse">Initializing Infrastructure...</p>
+      </div>
+    );
   }
 
   return (

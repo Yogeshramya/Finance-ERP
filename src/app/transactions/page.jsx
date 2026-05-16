@@ -23,6 +23,7 @@ export default function TransactionsPage() {
   const [loans, setLoans] = useState([]);
   const [branches, setBranches] = useState([]);
   const [showForm, setShowForm] = useState(false);
+  const [loading, setLoading] = useState(true);
   
   const [formData, setFormData] = useState({
     clientId: "",
@@ -62,6 +63,8 @@ export default function TransactionsPage() {
     } catch (error) {
       console.error("Error fetching data:", error);
       setTransactions(mockTransactions);
+    } finally {
+      setLoading(false);
     }
   }
 
@@ -86,6 +89,17 @@ export default function TransactionsPage() {
     } catch (error) {
       console.error("Error saving transaction:", error);
     }
+  }
+
+  if (loading) {
+    return (
+      <DashboardLayout>
+        <div className="p-10 flex flex-col items-center justify-center min-h-[400px]">
+          <div className="w-12 h-12 border-4 border-indigo-600/20 border-t-indigo-600 rounded-full animate-spin mb-4" />
+          <p className="text-sm font-black uppercase tracking-widest text-slate-400">Loading Repository...</p>
+        </div>
+      </DashboardLayout>
+    );
   }
 
   return (

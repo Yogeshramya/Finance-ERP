@@ -11,6 +11,7 @@ export default function DashboardPage() {
     totalCollections: 0,
     pendingApprovals: 0,
   });
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     async function fetchStats() {
@@ -22,10 +23,20 @@ export default function DashboardPage() {
         }
       } catch (error) {
         console.error("Error fetching dashboard stats:", error);
+      } finally {
+        setLoading(false);
       }
     }
     fetchStats();
   }, []);
+
+  if (loading) {
+    return (
+      <div className="p-10 flex items-center justify-center min-h-screen bg-slate-50">
+        <p className="text-sm font-black uppercase tracking-[0.3em] text-slate-400 animate-pulse">Loading System...</p>
+      </div>
+    );
+  }
 
   return (
     <DashboardLayout>
