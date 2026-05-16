@@ -76,7 +76,7 @@ export default function DashboardPage() {
 
         {/* Analytics and Activities Section */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          <div className="lg:col-span-2 bg-white rounded-[40px] p-10 shadow-2xl shadow-slate-100 border border-slate-50 relative overflow-hidden">
+          <div className="lg:col-span-2 bg-white rounded-3xl p-10 shadow-lg border border-gray-100 relative overflow-hidden">
             <div className="absolute top-0 right-0 w-64 h-64 bg-indigo-50/30 rounded-full -mr-32 -mt-32 blur-3xl pointer-events-none" />
             
             <div className="relative z-10 flex items-center justify-between mb-10">
@@ -103,7 +103,7 @@ export default function DashboardPage() {
             </div>
           </div>
 
-          <div className="bg-white rounded-[40px] p-10 shadow-2xl shadow-slate-100 border border-slate-50">
+          <div className="bg-white rounded-3xl p-10 shadow-lg border border-gray-100">
             <h2 className="text-2xl font-black text-slate-900 tracking-tight mb-8">
               Live Feed
             </h2>

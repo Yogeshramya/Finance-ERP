@@ -116,7 +116,7 @@ export default function TransactionsPage() {
           <motion.div 
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="bg-white rounded-[40px] p-10 shadow-2xl shadow-slate-100 border border-slate-100"
+            className="bg-white rounded-3xl p-10 shadow-lg border border-gray-100"
           >
             <div className="flex items-center gap-4 mb-8">
               <div className="w-12 h-12 bg-indigo-50 text-indigo-600 rounded-2xl flex items-center justify-center">
@@ -199,7 +199,7 @@ export default function TransactionsPage() {
         )}
 
         {/* Records Table Card */}
-        <div className="bg-white rounded-[40px] shadow-2xl shadow-slate-100 border border-slate-50 overflow-hidden">
+        <div className="bg-white rounded-3xl shadow-lg border border-gray-100 overflow-hidden">
           <div className="p-8 border-b border-slate-50 flex flex-col md:flex-row items-center justify-between gap-6">
             <h2 className="text-2xl font-black text-slate-900 tracking-tight">Financial Records</h2>
             <div className="flex items-center gap-3">

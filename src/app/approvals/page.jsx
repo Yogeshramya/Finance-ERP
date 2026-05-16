@@ -89,7 +89,7 @@ export default function ApprovalsPage() {
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.9, transition: { duration: 0.2 } }}
-                  className="bg-white rounded-[40px] p-10 shadow-[0_30px_60px_rgba(0,0,0,0.03)] border border-gray-100 relative overflow-hidden group hover:shadow-2xl hover:shadow-indigo-500/5 transition-all duration-500"
+                  className="bg-white rounded-3xl p-10 shadow-lg border border-gray-100 relative overflow-hidden group hover:shadow-2xl hover:shadow-indigo-500/5 transition-all duration-500"
                 >
                   <div className="absolute top-0 right-0 p-8">
                     <div className="bg-amber-50 text-amber-600 px-4 py-2 rounded-full text-[10px] font-black uppercase tracking-widest flex items-center gap-2">

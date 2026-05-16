@@ -138,7 +138,7 @@ export default function LoansPage() {
 
         {/* Create Loan Form */}
         {showAddLoan && (
-          <div className="bg-white rounded-[40px] p-10 shadow-2xl shadow-indigo-100 border border-indigo-50">
+          <div className="bg-white rounded-3xl p-10 shadow-lg border border-gray-100">
             <div className="flex items-center gap-4 mb-8">
                <div className="w-12 h-12 bg-indigo-50 text-indigo-600 rounded-2xl flex items-center justify-center">
                  <Briefcase size={24} />
@@ -215,7 +215,7 @@ export default function LoansPage() {
         )}
 
         {/* Loan List */}
-        <div className="bg-white rounded-[40px] shadow-2xl shadow-slate-100 border border-slate-50 overflow-hidden">
+        <div className="bg-white rounded-3xl shadow-lg border border-gray-100 overflow-hidden">
           <div className="p-8 border-b border-slate-50 flex items-center justify-between">
             <h2 className="text-2xl font-black text-slate-900 tracking-tight">Active Portfolios</h2>
             <div className="flex gap-4">

@@ -62,7 +62,7 @@ export default function ClientsPage() {
     <DashboardLayout>
       <div className="space-y-10">
         {/* Page Header */}
-        <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-8 bg-slate-900 p-10 rounded-[40px] shadow-2xl relative overflow-hidden">
+        <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-8 bg-slate-900 p-10 rounded-3xl shadow-lg relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-indigo-500/10 rounded-full -mr-32 -mt-32 blur-3xl pointer-events-none" />
           
           <div className="relative z-10">
@@ -83,7 +83,7 @@ export default function ClientsPage() {
         </div>
 
         {/* Clients Table Card */}
-        <div className="bg-white rounded-[40px] shadow-2xl shadow-slate-100 border border-slate-100 overflow-hidden">
+        <div className="bg-white rounded-3xl shadow-lg border border-gray-100 overflow-hidden">
           {/* Table Header / Controls */}
           <div className="p-10 flex flex-col lg:flex-row items-center justify-between gap-8 border-b border-slate-50 bg-slate-50/30">
             <div className="relative w-full lg:w-[500px] group">

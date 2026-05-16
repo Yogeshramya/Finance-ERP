@@ -56,7 +56,7 @@ export default function ReportsPage() {
     <DashboardLayout>
       <div className="space-y-10">
         {/* Header Hero Section */}
-        <div className="bg-slate-950 p-12 rounded-[40px] shadow-2xl relative overflow-hidden group">
+        <div className="bg-slate-950 p-12 rounded-3xl shadow-lg relative overflow-hidden group">
           <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-indigo-600/10 rounded-full -mr-32 -mt-32 blur-[100px]" />
           
           <div className="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-10">
@@ -156,7 +156,7 @@ export default function ReportsPage() {
         </div>
 
         {/* Report Table */}
-        <div className="bg-white rounded-[40px] shadow-2xl shadow-slate-100 border border-slate-100 overflow-hidden">
+        <div className="bg-white rounded-3xl shadow-lg border border-gray-100 overflow-hidden">
           <div className="overflow-x-auto">
             <table className="w-full text-left">
               <thead>

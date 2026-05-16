@@ -97,7 +97,7 @@ export default function AuditLogsPage() {
         </div>
 
         {/* Log Entries */}
-        <div className="bg-white rounded-[40px] shadow-2xl shadow-slate-100 border border-slate-100 overflow-hidden">
+        <div className="bg-white rounded-3xl shadow-lg border border-gray-100 overflow-hidden">
           <div className="p-8 border-b border-slate-50">
              <h2 className="text-xl font-black text-slate-900">Security Stream</h2>
           </div>

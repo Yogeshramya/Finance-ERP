@@ -96,7 +96,7 @@ export default function BranchesPage() {
           <motion.div 
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="bg-white rounded-[40px] p-10 shadow-2xl shadow-slate-100 border border-slate-100"
+            className="bg-white rounded-3xl p-10 shadow-lg border border-gray-100"
           >
             <div className="flex items-center gap-4 mb-8">
               <div className="w-12 h-12 bg-indigo-50 text-indigo-600 rounded-2xl flex items-center justify-center">
@@ -181,7 +181,7 @@ export default function BranchesPage() {
             <motion.div 
               key={branch._id}
               whileHover={{ y: -5 }}
-              className="bg-white rounded-[40px] p-8 shadow-xl shadow-slate-100 border border-slate-50 relative overflow-hidden group"
+              className="bg-white rounded-3xl p-8 shadow-lg border border-gray-100 relative overflow-hidden group"
             >
               <div className="absolute -right-4 -top-4 w-32 h-32 bg-indigo-50 rounded-full opacity-50 group-hover:scale-110 transition-transform duration-500" />
               
@@ -238,7 +238,7 @@ export default function BranchesPage() {
           {!showForm && (
             <button 
               onClick={() => setShowForm(true)}
-              className="group bg-slate-50/50 border-2 border-dashed border-slate-200 rounded-[40px] flex flex-col items-center justify-center p-10 min-h-[400px] hover:border-indigo-200 hover:bg-white transition-all"
+              className="group bg-slate-50/50 border-2 border-dashed border-slate-200 rounded-3xl flex flex-col items-center justify-center p-10 min-h-[400px] hover:border-indigo-200 hover:bg-white transition-all"
             >
               <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-slate-300 shadow-sm border border-slate-100 group-hover:bg-indigo-50 group-hover:text-indigo-600 transition-all mb-4">
                 <Plus size={32} />

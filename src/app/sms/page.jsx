@@ -86,7 +86,7 @@ export default function SMSPage() {
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              className="bg-white rounded-[40px] p-10 shadow-2xl shadow-slate-100 border border-slate-100 relative overflow-hidden"
+              className="bg-white rounded-3xl p-10 shadow-lg border border-gray-100 relative overflow-hidden"
             >
               <div className="absolute top-0 right-0 w-64 h-64 bg-indigo-50/30 rounded-full -mr-32 -mt-32 blur-3xl pointer-events-none" />
               

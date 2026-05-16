@@ -65,7 +65,7 @@ export default function FileUpload() {
   }
 
   return (
-    <div className="bg-white rounded-[40px] shadow-2xl shadow-slate-100 border border-slate-100 p-10 mt-10 overflow-hidden relative">
+    <div className="bg-white rounded-3xl shadow-lg border border-gray-100 p-10 mt-10 overflow-hidden relative">
       <div className="absolute top-0 right-0 w-32 h-32 bg-indigo-50/50 rounded-full -mr-16 -mt-16 blur-2xl pointer-events-none" />
       
       <div className="relative z-10">
